@@ -27,3 +27,7 @@
 #board button:first-child img{
     transform: translateX(4px);
 }
+
+#board ul::-webkit-scrollbar {
+    display: none;
+  }
