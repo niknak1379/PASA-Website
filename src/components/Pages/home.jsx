@@ -56,7 +56,8 @@ export default function Home() {
             <section id='apply' className='flex flex-col gap-24 py-32 items-center'>
                 <h3 className='text-3xl'>Our People</h3>
                 <h4 className='text-6xl text-center'>Apply to our Board to be involved in our community!</h4>
-                <a target='_blank' href='https://instagram.com/PASA' className='outLink applyLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg flex flex-row items-center text-xl'>
+                <h5 className='text-2xl text-center'>Applications open at the end of winter quarter!</h5>
+                <a target='_blank' href='https://www.instagram.com/pasa.ucsd/' className='outLink applyLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg flex flex-row items-center text-xl'>
                     Apply Here
                     <img alt='new tab icon' src={newTabLogo} className='h-[1em]'/>
                 </a>

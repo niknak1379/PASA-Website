@@ -38,19 +38,19 @@ export default function Footer() {
                 </nav>
                 <ul className="headerSocialIconsList flex flex-row items-center">
                     <li>
-                        <a href='tiktok.com' target='_blank'>
+                        <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
                             <img src={tiktokLogo} alt="tiktok logo"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href='instagram.com' target='_blank'>
+                        <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
                             <img src={instagramLogo} alt="instagram logo"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href='facebook.com' target='_blank'>
+                        <a href='https://www.facebook.com/PASA.UCSANDIEGO' target='_blank'>
                             <img src={facebookLogo} alt="facebook logo"/>
                         </a>
                     </li>

@@ -52,10 +52,10 @@ export default function Carousel() {
         }
         function updateMobileStatus() {
             console.log(window.screen.width)
-            if (window.screen.width <= 640) {
+            if (window.screen.width <= 640 || window.innerWidth <= 640) {
                 console.log('setting mobile to true')
                 setIsMobile(true);
-            }
+            } 
             else {
                 console.log('setting mobile to false')
                 setIsMobile(false);
@@ -102,7 +102,7 @@ export default function Carousel() {
                                     <h4 className='text-4xl'>
                                         Community Building:
                                     </h4>
-                                    <p className='text-2xl'>
+                                    <p className='text-xl'>
                                         Our mission is giving a community and bringing other white washed persians
                                         closer to their cultural roots or sth like that
                                     </p>
@@ -126,7 +126,7 @@ export default function Carousel() {
                                     <h4 className='text-4xl'>
                                         Community Building:
                                     </h4>
-                                    <p className='text-2xl'>
+                                    <p className='text-xl'>
                                         Our mission is giving a community and bringing other white washed persians
                                         closer to their cultural roots or sth like that
                                     </p>
@@ -149,7 +149,7 @@ export default function Carousel() {
                                     <h4 className='text-4xl'>
                                         Community Building:
                                     </h4>
-                                    <p className='text-2xl'>
+                                    <p className='text-xl'>
                                         Our mission is giving a community and bringing other white washed persians
                                         closer to their cultural roots or sth like that
                                     </p>
