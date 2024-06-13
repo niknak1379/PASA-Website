@@ -1,6 +1,6 @@
-import girlPic from '../../assets/Main/Events/table.jpg';
-import jarPic from '../../assets/Main/Events/jar.jpg';
-import hi from '../../assets/Main/Events/hi.jpeg';
+import girlPic from '../../assets/Main/Events/table.avif';
+import jarPic from '../../assets/Main/Events/jar.avif';
+import hi from '../../assets/Main/Events/hi.avif';
 
 import './eventsCarousel.css';
 import { useRef, useEffect, useState } from 'react';

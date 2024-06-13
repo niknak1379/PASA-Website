@@ -2,7 +2,7 @@ import instagramLogo from '../../assets/Icons/instagramIcon.svg';
 import tiktokLogo from '../../assets/Icons/facebookIcon.svg';
 import facebookLogo from '../../assets/Icons/tiktokIcon.svg';
 import sunLogo from '../../assets/Icons/sun.svg'
-import pasaLogo from '../../assets/PASA_logo.png';
+import pasaLogo from '../../assets/PASA_logo.webp';
 import newTabLogo from '../../assets/Icons/newTab.svg'
 import './header.css'
 //import headerOffSet from '../../App';

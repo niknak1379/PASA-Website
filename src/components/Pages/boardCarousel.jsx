@@ -1,5 +1,5 @@
 import './boardCarousel.css';
-import headURL from '../../assets/Main/Board/headEXP.jpeg';
+import headURL from '../../assets/Main/Board/headEXP.avif';
 import backArrow from '../../assets/Icons/arrowLeft.svg';
 import forwardArrow from '../../assets/Icons/arrowRight.svg';
 import { useEffect, useRef, useState } from 'react';

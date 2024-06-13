@@ -1,5 +1,5 @@
-import pasaLogo from '../../assets/PASA_logo.png';
-import jarPic from '../../assets/Main/jar.jpg';
+import pasaLogo from '../../assets/PASA_logo.webp';
+import jarPic from '../../assets/Main/jar.avif';
 import newTabLogo from '../../assets/Icons/newTab.svg'
 
 import Carousel from './eventsCarousel';

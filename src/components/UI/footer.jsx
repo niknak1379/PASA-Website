@@ -1,7 +1,7 @@
 import instagramLogo from '../../assets/Icons/instagramIcon.svg';
 import tiktokLogo from '../../assets/Icons/facebookIcon.svg';
 import facebookLogo from '../../assets/Icons/tiktokIcon.svg';
-import pasaLogo from '../../assets/PASA_logo.png';
+import pasaLogo from '../../assets/PASA_logo.webp';
 import { Link } from 'react-router-dom';
 import './footer.css'
 
