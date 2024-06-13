@@ -218,7 +218,7 @@ export default function Header(props) {
 
     
     return (
-        <div id='headerWrapp' className="flex flex-col px-6 md:px-4 items-center bg-transparent w-full max-w-screen-lg">
+        <div id='headerWrapp' className="flex flex-col px-3 md:px-4 items-center bg-transparent w-full max-w-screen-lg">
             <div id='logoWrapper' className='flex flex-row w-full items-center justify-center' ref={logoWrapperRef}>
                 <div className='filler basis-0 grow shrink flex items-center'>
                     <ThemeToggleButton/>
