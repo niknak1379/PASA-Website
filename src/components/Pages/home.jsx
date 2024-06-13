@@ -29,7 +29,8 @@ export default function Home() {
                     </button>
                 </section>
                 <div className='heroImg sm:mx-auto md:ml-auto my-auto flex-shrink'>
-                    <img loading="eager" fetchpriority="high" src={pasaLogo} className='rounded-full mx-auto size-1/2 md:size-full shadow-lg' alt='pasa logo'/>
+                    <img loading="eager" fetchpriority="high" src={pasaLogo} width='200' height='200'
+                    className='rounded-full mx-auto size-1/2 md:size-full shadow-lg' alt='pasa logo'/>
                 </div>
                 
             </section>
