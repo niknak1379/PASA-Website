@@ -39,7 +39,8 @@ export default function Header(props) {
                 stickyHeaderRef.current.classList.remove('fixed');
             }
         }
-        let checked = false;
+        //nvm scrapped
+        /* let checked = false;
         const observer = new IntersectionObserver((entries) => {
             
             entries.forEach(entry => {
@@ -61,7 +62,7 @@ export default function Header(props) {
             //root: null, // observing intersections relative to the viewport
             threshold: [0, 0.8], // trigger when 50% of the target is visible
             rootMargin: '-50px' // margin around the root
-        });
+        }); */
         /* let linkIDs = linksArray.map(x => tag.concat(x))
         let elements = linkIDs.map(id => document.querySelector(id));
         elements.map(element => observer.observe(element)) */
@@ -286,7 +287,7 @@ export default function Header(props) {
                                 <img alt='new tab icon' src={newTabLogo} className='h-[1em]'/>
                             </a>
 
-                            <button className="hamburgerButton h-[50px]" ref={navButtonRef}
+                            <button className="hamburgerButton h-[50px] w-[50px]" ref={navButtonRef}
                                     aria-controls="primary-navigation" aria-expanded="false" onClick={(e) => {
                                         toggleMobileNav(e);
                                         }}>
