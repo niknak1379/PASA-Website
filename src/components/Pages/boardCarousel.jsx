@@ -133,14 +133,21 @@ export default function boardCarousel() {
                 isMobile && 
                 <nav className='ml-auto pt-4'>
                     <button className='px-4 py-4 h-full' ref={leftButtonRef}  onClick={() => {
-                            carouselRef.current.scrollBy({left: -500, behavior: "smooth",})
+                            console.log('left');
+                            console.log(carouselRef.current.scrollLeft)
+                            let scrollAmount = (carouselRef.current.scrollLeft < 500) ? (-1 * carouselRef.current.scrollLeft) : -500;
+                            carouselRef.current.scrollBy({left: scrollAmount, behavior: "smooth",})
                         }}>
                         <img alt='Back Arrow' src={backArrow}/>
                     </button>
 
                     <button className='px-4 py-4 h-full' ref={rightButtonRef} onClick={() => {
                             console.log('right');
-                            carouselRef.current.scrollBy({left: 500, behavior: "smooth",})
+                            let maxScrollLeft = carouselRef.current.scrollWidth - carouselRef.current.clientWidth - carouselRef.current.scrollLeft;
+                            let scrollAmount = (maxScrollLeft < 500) ? (maxScrollLeft) : 500;
+                            console.log(maxScrollLeft)
+                            console.log(scrollAmount)
+                            carouselRef.current.scrollBy({left: scrollAmount, behavior: "smooth",})
                         }}>
                         <img alt='Forward Arrow' src={forwardArrow}/>
                     </button>
