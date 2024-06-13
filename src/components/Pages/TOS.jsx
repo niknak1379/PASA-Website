@@ -9,10 +9,10 @@ export default function Terms() {
 
         
         <section id="terms">
-            <h1>Terms of Service for Nikan's personal website</h1>
+            <h1>Terms of Service for PASA's website</h1>
               <p>Last updated: 06/16/2024</p>
-              <p>Welcome to Nikan's personal website! These terms and conditions outline the rules and regulations for the use of Nikans's Website, located at [YourWebsite.com].</p>
-              <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Nikan's personal website if you do not agree to take all of the terms and conditions stated on this page.</p>
+              <p>Welcome to PASA's website! These terms and conditions outline the rules and regulations for the use of Nikans's Website, located at [YourWebsite.com].</p>
+              <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use PASA's website if you do not agree to take all of the terms and conditions stated on this page.</p>
 
               <h2>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements:</h2>
               <ul>
@@ -22,23 +22,23 @@ export default function Terms() {
               </ul>
 
               <h2>Cookies</h2>
-              <p>We employ the use of cookies. By accessing Nikan's personal website, you agreed to use cookies in agreement with the Nikans's Privacy Policy.</p>
+              <p>We employ the use of cookies. By accessing PASA's website, you agreed to use cookies in agreement with the Nikans's Privacy Policy.</p>
 
               <h2>License</h2>
-              <p>Unless otherwise stated, Nikans and/or its licensors own the intellectual property rights for all material on [Your Website]. All intellectual property rights are reserved. You may access this from [Your Website] for your own personal use subjected to restrictions set in these terms and conditions.</p>
+              <p>Unless otherwise stated, Nikans and/or its licensors own the intellectual property rights for all material on pasaatucsd.com . All intellectual property rights are reserved. You may access this from pasaatucsd.com  for your own personal use subjected to restrictions set in these terms and conditions.</p>
 
               <h2>You must not:</h2>
               <ul>
-                  <li>Republish material from Nikan's personal website</li>
-                  <li>Sell, rent or sub-license material from Nikan's personal website</li>
-                  <li>Reproduce, duplicate or copy material from Nikan's personal website</li>
-                  <li>Redistribute content from Nikan's personal website</li>
+                  <li>Republish material from PASA's website</li>
+                  <li>Sell, rent or sub-license material from PASA's website</li>
+                  <li>Reproduce, duplicate or copy material from PASA's website</li>
+                  <li>Redistribute content from PASA's website</li>
               </ul>
 
               <h2>User Comments</h2>
-              <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the [Terms and Conditions Generator].</p>
+              <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the GPT :.</p>
 
-              <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. [Your Company's Name] does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of [Your Company's Name],its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, [Your Company's Name] shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+              <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. PASA does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of PASA,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, PASA shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
 
               <h2>Hyperlinking to our Content</h2>
               <p>The following organizations may link to our Website without prior written approval:</p>

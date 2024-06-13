@@ -8,9 +8,9 @@ export default function Privacy() {
 
        
         <section id="privacy">
-             <h1>Privacy Policy for Nikan Ostovan</h1>
+             <h1>Privacy Policy for PASA</h1>
               <p><strong>Effective date:</strong> 02/02/2001</p>
-              <p>This privacy policy ("Policy") describes how Nikan Ostovan ("I", "me", or "my") collects, protects, and uses the personal data you ("Visitor", "you", or "your") may provide on [yourwebsite.com] ("Website" or "Service") and any of its related products and services (collectively, "Services"). This Policy is a legally binding agreement between you and this Website operator. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Policy. If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms "Visitor", "you", or "your" shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services.</p>
+              <p>This privacy policy ("Policy") describes how PASA ("I", "me", or "my") collects, protects, and uses the personal data you ("Visitor", "you", or "your") may provide on [yourwebsite.com] ("Website" or "Service") and any of its related products and services (collectively, "Services"). This Policy is a legally binding agreement between you and this Website operator. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Policy. If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms "Visitor", "you", or "your" shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services.</p>
 
               <h2>Collection of personal information</h2>
               <p>You can visit the Website without telling us who you are or revealing any information by which someone could identify you as a specific, identifiable individual. If, however, you wish to use some of the Website's features, or you wish to receive our newsletter or other information, you will be asked to provide certain Personal Information (for example, your name and e-mail address). We receive and store any information you knowingly provide to us when you fill any online forms on the Website. When required, this information may include the following:</p>
@@ -36,7 +36,7 @@ export default function Privacy() {
               <p>You acknowledge that you have read this Policy and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to access or use the Website and Services.</p>
 
               <h2>Contacting me</h2>
-              <p>If you have any questions about this Policy, please contact me at nikanostovan@gmail.com.</p>
+              <p>If you have any questions about this Policy, please contact us at pasa@ucsd.edu</p>
 
               <p>This document was last updated on 06/16/2024.</p>
         </section>
