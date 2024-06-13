@@ -110,10 +110,13 @@ export default function Header(props) {
         } */
 
         function updateMobileStatus() {
+            console.log(window.innerWidth)
             if (window.innerWidth <= 640) {
+                console.log('setting mobile to true')
                 setIsMobile(true);
             }
             else {
+                console.log('setting mobile to false')
                 setIsMobile(false);
             }
         }
