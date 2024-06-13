@@ -56,10 +56,13 @@ export default function boardCarousel() {
         window.addEventListener('resize', updateCarasoulWidth);
 
         function updateMobileStatus() {
-            if (window.innerWidth <= 640) {
+            console.log(window.screen.width)
+            if (window.screen.width <= 640) {
+                console.log('setting mobile to true')
                 setIsMobile(true);
             }
             else {
+                console.log('setting mobile to false')
                 setIsMobile(false);
             }
         }

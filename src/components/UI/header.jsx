@@ -110,8 +110,8 @@ export default function Header(props) {
         } */
 
         function updateMobileStatus() {
-            console.log(window.innerWidth)
-            if (window.innerWidth <= 640) {
+            console.log(window.screen.width)
+            if (window.screen.width <= 640) {
                 console.log('setting mobile to true')
                 setIsMobile(true);
             }
@@ -121,8 +121,10 @@ export default function Header(props) {
             }
         }
 
-        
+        //document.addEventListener('onload', updateMobileStatus)
+        //setTimeout(updateMobileStatus, 0);
         updateMobileStatus();
+        //updateMobileStatus();
         window.addEventListener('resize', updateMobileStatus);
         document.addEventListener('scroll', makeNavSticky);
         
