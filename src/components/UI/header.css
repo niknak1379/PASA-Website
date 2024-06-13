@@ -1,0 +1,185 @@
+ul.headerSocialIconsList img{
+    height: 30px;
+}
+
+
+nav a{
+    padding: 0.5em 1em 0.5em 1em;
+}
+/* nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+ 
+} */
+header{
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    z-index: 9999;
+}
+
+/* header ul img{
+    filter: invert(1);
+} */
+
+header ul.desktopNav li {
+    border-right: dashed var(--divider-color);
+}
+
+header ul span{
+    display: none;
+}
+header ul a{
+    position: relative;
+}
+header ul a:hover span, header ul a span.active{
+    display: flex;
+    position: absolute;
+    font-size: 4rem;
+    top: -0.78em;
+    left: 0.05rem;
+}
+
+header a.donateLink{
+    background-color: var(--primary-complement-color);
+}
+a img{
+    transform: translateY(0.06em);
+}
+a:hover img{
+    filter: invert(1);
+}
+
+#logoWrapper ul li:not(:last-child) {
+    border-right: dashed var(--divider-color);
+    padding-inline: 0.5rem;
+}
+#logoWrapper ul li:last-child {
+    padding-left: 0.5rem;
+}
+#logoWrapper ul li a:hover img, 
+footer li img:hover, 
+body.dark #logoWrapper ul li a img,
+body.dark footer li img
+{
+    filter: invert(75%) sepia(36%) saturate(151%) hue-rotate(198deg) brightness(109%) contrast(95%);
+}
+
+body.dark #logoWrapper ul li a img:hover,
+body.dark footer li img:hover{
+    filter: none;
+}
+
+header.fixed{
+    width: 100%;
+    padding-inline: 1rem;
+}
+@media (max-width: 1024px){
+    header.fixed{
+       
+        padding-inline: 0.75rem;
+    }
+}
+
+#headerWrapp:has(header.fixed) + main{
+    padding-top: 4rem;
+}
+header div{
+    border-bottom-width: 1px;
+}
+#headerWrapp hr{
+    border-color: var(--font-color);
+}
+
+
+.hamburgerButton {
+    --button-color: var(--font-color);
+    overflow: hidden;
+}
+  
+.hamburgerButton .hamburger {
+    transition: translate 0.4s, rotate 0.4s;
+}
+  
+.hamburgerButton[aria-expanded="true"] .hamburger {
+    translate: 5px -3px;
+    rotate: 0.125turn;
+}
+  
+.hamburgerButton .line {
+    transition: 0.4s;
+    stroke-dasharray: 60 31 60 300;
+}
+  
+.hamburgerButton[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}
+  
+aside {
+    background-color: var(--primary-complement-color);
+    border: solid black 2px;
+    animation: open 300ms ease-out;
+}
+aside.closed {
+    animation: close 300ms ease-out;
+}
+
+aside nav li{
+    border-bottom: dashed var(--divider-color);
+    padding-bottom: 1rem;
+}
+aside nav li:not(:first-child){
+    padding-top: 1rem;
+}
+
+aside ul.headerSocialIconsList li:not(:last-child){
+    border-right: dashed var(--divider-color);
+    padding-right: 0.5rem;
+}
+aside ul.headerSocialIconsList li:not(:first-child){
+    padding-left: 0.5rem;
+}
+
+body:has(aside) main, body:has(aside) footer{
+    transition: 300ms;
+    filter: blur(4px);
+}
+body:has(aside.closed) main, body:has(aside.closed) footer{
+    transition: 300ms;
+    filter: blur(0px);
+}
+
+
+@keyframes open {
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes close {
+    to{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header .pasaLogo{
+    transition: transform 200ms ease-in-out;
+}
+header.fixed .pasaLogo{
+    transform: scale(1.5) translateY(40%);
+    transform-origin: center left;
+    transition: transform 200ms ease-in-out;
+}

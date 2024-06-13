@@ -1,0 +1,35 @@
+/* main #introduction #introText{
+    max-width: 40%;
+} */
+main > section, div{
+    border-color: var(--divider-color);
+}
+main > section {
+    border-style: dashed;
+    border-bottom-width: 1px;
+}
+main #introduction p {
+    margin-top: 2em;
+}
+main button.subscribeButton{
+    margin-top: 1em;
+    background-color: var(--primary-complement-color);
+}
+
+main a.applyLink{
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+img.aboutImg {
+    scale: 0.8;
+    opacity: 0.7;
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: 0px 400px
+}
+@keyframes appear {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

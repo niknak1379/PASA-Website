@@ -1,0 +1,18 @@
+div.imgContainer div{
+    content: '';
+}
+div.imgContainer img {
+    /* height: 100vh; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+div.explanationContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+}
+
+/* div.imgContainer img:not(:first-child) {
+    opacity: 0;
+} */

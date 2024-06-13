@@ -1,0 +1,18 @@
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer nav li:not(:first-child):before{
+    content: '/';
+}
+footer nav li:last-child a{
+    padding-right: 0;
+}
+footer img.footerLogo{
+    scale: 0.7;
+    opacity: 0.8;
+    animation: appear linear forwards;
+    /* animatino defined in home.css */
+    animation-timeline: view();
+    animation-range: 20px 100px;
+}

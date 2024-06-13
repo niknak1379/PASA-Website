@@ -1,0 +1,29 @@
+#board li.cardDiv{
+    background-color: var(--primary-complement-color);
+    border-color: var(--divider-color);
+    transition: all 0.2s ease-in-out;
+    color: #2f3380;
+}
+/* #board ul{
+    padding: 20px 0 20px 0;
+}
+#board li.cardDiv:hover{
+    transform: scale(1.1);
+} */
+#board button{
+    background-color: var(--primary-complement-color);
+    border: black solid 2px;
+}
+#board button:hover{
+    background-color: white;
+}
+#board button.disabled{
+    background-color: darkgray;
+    cursor: default;
+}
+#board button:last-child{
+    border-left: none;
+}
+#board button:first-child img{
+    transform: translateX(4px);
+}
