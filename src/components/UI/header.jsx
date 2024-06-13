@@ -1,6 +1,6 @@
 import instagramLogo from '../../assets/Icons/instagramIcon.svg';
-import tiktokLogo from '../../assets/Icons/facebookIcon.svg';
-import facebookLogo from '../../assets/Icons/tiktokIcon.svg';
+import facebookLogo from '../../assets/Icons/facebookIcon.svg';
+import tiktokLogo from '../../assets/Icons/tiktokIcon.svg';
 import sunLogo from '../../assets/Icons/sun.svg'
 import pasaLogo from '../../assets/PASA_logo.webp';
 import newTabLogo from '../../assets/Icons/newTab.svg'
@@ -27,7 +27,7 @@ export default function Header(props) {
     const [navStatus, setNav] = useState(false);
     useEffect(() => {
         let topOffset = stickyHeaderRef.current.offsetTop;
-        let backdrop = document.body.querySelectorAll('footer, main');
+        
         //sethOffset(topOffset);
         function makeNavSticky(e) {
             //console.log(window.scrollY, topOffset)
@@ -133,6 +133,22 @@ export default function Header(props) {
             !isMobile && document.addEventListener('scroll', activateHeaderLink);
         } */
 
+        
+
+        
+        
+
+        return () => {
+            document.removeEventListener('scroll', makeNavSticky);
+            //document.removeEventListener('scroll', activateHeaderLink);
+            window.removeEventListener('resize', updateMobileStatus);
+            window.removeEventListener('onload', updateMobileStatus);
+            
+            //elements.map(element => observer.unobserve(element))
+        };
+    }, []);
+    useEffect (() => {
+        let backdrop = document.body.querySelectorAll('footer, main');
         function bodyClick() {
             if(navStatus) {
                 navButtonRef.current.click();
@@ -154,18 +170,10 @@ export default function Header(props) {
             document.body.classList.remove('overflow-hidden')
         }
 
-        
-        
-
-        return () => {
-            document.removeEventListener('scroll', makeNavSticky);
-            //document.removeEventListener('scroll', activateHeaderLink);
-            window.removeEventListener('resize', updateMobileStatus);
-            window.removeEventListener('onload', updateMobileStatus);
+        return(() => {
             Array.from(backdrop).map(item => (item.removeEventListener('click', bodyClick)));
-            //elements.map(element => observer.unobserve(element))
-        };
-    }, []);
+        })
+    },[navStatus])
     
 
     function scrollAnimate(event, elementId) {
@@ -234,14 +242,15 @@ export default function Header(props) {
                     
                     <ul className="headerSocialIconsList hidden sm:flex flex-row items-center ml-auto basis-0 grow shrink justify-center">
                         <li className='ml-auto '> 
-                            <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
-                                <img src={tiktokLogo} alt="tiktok logo"/>
+                            
+                            <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
+                                <img src={instagramLogo} alt="instagram logo"/>
                             </a>
                         </li>
 
                         <li>
-                            <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
-                                <img src={instagramLogo} alt="instagram logo"/>
+                            <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
+                                <img src={tiktokLogo} alt="tiktok logo"/>
                             </a>
                         </li>
 
@@ -315,14 +324,15 @@ export default function Header(props) {
                                     </nav>
                                     <ul className="headerSocialIconsList flex flex-row items-center basis-0 grow shrink justify-center">
                                         <li > 
-                                            <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
-                                                <img src={tiktokLogo} alt="tiktok logo"/>
+                                            
+                                            <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
+                                                <img src={instagramLogo} alt="instagram logo"/>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
-                                                <img src={instagramLogo} alt="instagram logo"/>
+                                            <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
+                                                <img src={tiktokLogo} alt="tiktok logo"/>
                                             </a>
                                         </li>
 

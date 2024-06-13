@@ -1,6 +1,6 @@
 import instagramLogo from '../../assets/Icons/instagramIcon.svg';
-import tiktokLogo from '../../assets/Icons/facebookIcon.svg';
-import facebookLogo from '../../assets/Icons/tiktokIcon.svg';
+import facebookLogo from '../../assets/Icons/facebookIcon.svg';
+import tiktokLogo from '../../assets/Icons/tiktokIcon.svg';
 import pasaLogo from '../../assets/PASA_logo.webp';
 import { Link } from 'react-router-dom';
 import './footer.css'
@@ -38,14 +38,15 @@ export default function Footer() {
                 </nav>
                 <ul className="headerSocialIconsList flex flex-row items-center">
                     <li>
-                        <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
-                            <img src={tiktokLogo} alt="tiktok logo"/>
+                        
+                        <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
+                            <img src={instagramLogo} alt="instagram logo"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://www.instagram.com/pasa.ucsd/' target='_blank'>
-                            <img src={instagramLogo} alt="instagram logo"/>
+                        <a href='https://www.tiktok.com/@pasaucsd' target='_blank'>
+                            <img src={tiktokLogo} alt="tiktok logo"/>
                         </a>
                     </li>
 
