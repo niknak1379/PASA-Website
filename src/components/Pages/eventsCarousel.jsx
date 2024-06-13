@@ -79,9 +79,9 @@ export default function Carousel() {
                     {
                         !isMobile && 
                         <div className='imgContainer sm:w-[50%] sticky top-0 sm:h-screen'>
-                            <img id='carasolImg' src={girlPic} ref={img1} className='absolute z-10'/>
-                            <img src={jarPic} ref={img2} className='absolute'/>
-                            <img src={hi} ref={img3} className='absolute'/>
+                            <img id='carasolImg' src={girlPic} ref={img1} className='absolute z-10' alt='a girl at a social table'/>
+                            <img src={jarPic} ref={img2} className='absolute' alt='picture of a jar'/>
+                            <img src={hi} ref={img3} className='absolute' alt='picture of a man playing footbal'/>
                         </div>
                     }
                     
@@ -90,7 +90,7 @@ export default function Carousel() {
                         <div className='h-screen sm:h-[600px] flex flex-col' ref={txt1}>
                             {
                                 isMobile &&
-                                <img id='carasolImg' src={girlPic} ref={img1} className=''/>
+                                <img id='carasolImg' src={girlPic} ref={img1} className='' alt='picture of a girl at a social table'/>
                             }
                             
                             <div className='flex flex-row border-solid border-[2px] py-8 sm:h-full grow'>
@@ -114,7 +114,7 @@ export default function Carousel() {
                         <div className='h-screen sm:h-[600px] flex flex-col'>
                             {
                                 isMobile &&
-                                <img src={jarPic} ref={img2} className=''/>
+                                <img src={jarPic} ref={img2} className='' alt='picture of a jar'/>
                             }
                             
                             <div className='flex flex-row border-solid border-[2px] py-8 sm:h-full grow' >
@@ -137,7 +137,7 @@ export default function Carousel() {
                         <div className='h-screen sm:h-[600px] flex flex-col'>
                             {
                                 isMobile &&
-                                <img src={hi} ref={img3} className=''/>
+                                <img src={hi} ref={img3} className='' alt='picture of a man playing soccer'/>
                             }
                             
                             <div className='flex flex-row border-solid border-[2px] py-8 sm:h-full grow'>

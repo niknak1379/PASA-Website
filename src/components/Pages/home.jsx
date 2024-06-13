@@ -29,14 +29,14 @@ export default function Home() {
                     </button>
                 </section>
                 <div className='heroImg sm:mx-auto md:ml-auto my-auto flex-shrink'>
-                    <img src={pasaLogo} className='rounded-full mx-auto size-1/2 md:size-full shadow-lg'/>
+                    <img src={pasaLogo} className='rounded-full mx-auto size-1/2 md:size-full shadow-lg' alt='pasa logo'/>
                 </div>
                 
             </section>
             <section id='aboutUs' className=' px-[5%] lg:px-16 py-16'>
                 <div className='border-dashed border-x-[1px] py-16 px-8 flex flex-col md:flex-row gap-8 lg:gap-32'>
                     <div className='aboutImgWrapper mx-auto md:mr-auto max-w-[50%] md:max-w-full'>
-                        <img src={jarPic} className='rounded-md aboutImg'/>
+                        <img src={jarPic} className='rounded-md aboutImg' alt='picture of a jar'/>
                     </div>
                     
                     <div className='flex flex-col justify-center gap-8 md:gap-16 flex-shrink text-center md:text-left'>
