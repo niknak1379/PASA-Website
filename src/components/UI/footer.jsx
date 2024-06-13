@@ -15,7 +15,7 @@ export default function Footer() {
             <section className='footerLinks flex flex-col flex-wrap gap-4 items-center sm:items-end justify-between w-full py-8'>
                 <h4 className='flex-grow text-center'> Persian American Student Association @ UC San Diego</h4>
                 <nav className='webLinks'>
-                    <ul className='flex flex-row'>
+                    <ul className='flex flex-row flex-wrap justify-center'>
                         <li>
                             <Link to='/'>
                                 Home
