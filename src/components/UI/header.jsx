@@ -123,7 +123,7 @@ export default function Header(props) {
 
         //document.addEventListener('onload', updateMobileStatus)
         //setTimeout(updateMobileStatus, 0);
-        updateMobileStatus();
+        //updateMobileStatus();
         //updateMobileStatus();
         window.addEventListener('resize', updateMobileStatus);
         document.addEventListener('scroll', makeNavSticky);
@@ -231,8 +231,8 @@ export default function Header(props) {
                 </div>
                 <h1 className='font-bold text-6xl mr-auto pb-2'>P.A.S.A</h1>
                 {
-                    !isMobile && 
-                    <ul className="headerSocialIconsList flex flex-row items-center ml-auto basis-0 grow shrink justify-center">
+                    
+                    <ul className="headerSocialIconsList hidden sm:flex flex-row items-center ml-auto basis-0 grow shrink justify-center">
                         <li className='ml-auto '> 
                             <a href='tiktok.com' target='_blank'>
                                 <img src={tiktokLogo} alt="tiktok logo"/>
@@ -253,8 +253,8 @@ export default function Header(props) {
                     </ul>
                 }
                 {
-                    isMobile&& 
-                    <div className='ml-auto basis-0 grow shrink'></div>
+                    
+                    <div className='sm:hidden ml-auto basis-0 grow shrink'></div>
                 }
                 
             </div>
@@ -268,9 +268,9 @@ export default function Header(props) {
                     </Link>
 
                     {
-                        !isMobile && 
+                        
                         <>
-                            <nav className='flex justify-center items-center ml-auto'>
+                            <nav className='hidden sm:flex justify-center items-center ml-auto'>
                                 <ul className='desktopNav navList flex flex-row'> 
                                 {   
                                     chooseNavLinks()
@@ -278,21 +278,21 @@ export default function Header(props) {
                                 </ul>
                             </nav>
 
-                            <a  target='_blank' href='https://venmo.com/u/PASA-UCSD' className= 'donateLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg px-4 h-8 ml-4 flex flex-row items-center'>
+                            <a  target='_blank' href='https://venmo.com/u/PASA-UCSD' className= 'donateLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg px-4 h-8 ml-4 hidden sm:flex flex-row items-center'>
                                 Donate
                                 <img alt='new tab icon' src={newTabLogo} className='h-[1em]'/>
                             </a>
                         </>
                     }
                     {
-                        isMobile &&
+                        
                         <>
-                            <a  target='_blank' href='https://venmo.com/u/PASA-UCSD' className= 'donateLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg px-4 h-8 ml-auto flex flex-row items-center shrink'>
+                            <a  target='_blank' href='https://venmo.com/u/PASA-UCSD' className= 'donateLink hover:bg-black hover:text-white text-black rounded-lg shadow-lg px-4 h-8 ml-auto flex flex-row items-center shrink sm:hidden'>
                                 Donate
                                 <img alt='new tab icon' src={newTabLogo} className='h-[1em]'/>
                             </a>
 
-                            <button className="hamburgerButton h-[50px] w-[50px]" ref={navButtonRef}
+                            <button className="hamburgerButton h-[50px] w-[50px] sm:hidden" ref={navButtonRef}
                                     aria-controls="primary-navigation" aria-expanded="false" onClick={(e) => {
                                         toggleMobileNav(e);
                                         }}>
