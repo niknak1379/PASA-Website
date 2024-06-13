@@ -123,6 +123,12 @@ aside {
     border: solid black 2px;
     animation: open 300ms ease-out;
 }
+body.dark aside{
+    color: black;
+}
+body.dark aside *{
+    border-color: black !important;
+}
 aside.closed {
     animation: close 300ms ease-out;
 }

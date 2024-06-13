@@ -13,7 +13,7 @@ export default function Home() {
       }, []);
     
     return(
-        <main className='flex flex-col px-6 md:px-4 max-w-screen-lg'>
+        <main className='flex flex-col px-1 md:px-4 max-w-screen-lg'>
             <section id='introduction' className='flex flex-col-reverse md:flex-row border-dashed py-16 gap-16'>
                 <section id='introText' className='flex flex-col gap-2 justify-center'>
                     <h1 className='font-bold  text-5xl sm:text-7xl text-center md:text-left'>Persian American Student Association</h1>
