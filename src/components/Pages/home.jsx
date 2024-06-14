@@ -42,10 +42,16 @@ export default function Home() {
                     
                     <div className='flex flex-col justify-center gap-8 md:gap-16 flex-shrink text-center'>
                         <h3 className='text-6xl'>About Us</h3>
-                        <p className='text-xl font-semibold'>The Persian American Student Association (PASA) has been active in the UC San Diego
-                        Campus for 5 Years, serving as a social, cultural and community hub for Persian American's across San Diego</p>
-                        <p className='text-xl font-semibold'>Our mission is giving a community and bringing other white washed persians
-                        closer to their cultural roots or sth like that</p>
+                        <p className='text-xl font-semibold'>
+                        The Persian American Student Association (PASA) has been active in the UC San Diego
+                        Campus for 5 Years, serving as a social, cultural and community hub for Persian American's across San Diego
+                        <br></br><br></br>
+                        
+                        </p>
+                        <p className='text-xl font-light'>
+                        Our mission is to bring the Persian community closer together and introduce others to our beautiful culture!
+                        </p>
+                        
                     </div>
                 </div>
                 

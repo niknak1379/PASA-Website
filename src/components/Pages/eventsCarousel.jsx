@@ -75,6 +75,9 @@ export default function Carousel() {
     }, [isMobile]);
     return (
         <section id='events' className='py-32'>
+                <h3 className='pb-32 text-center text-6xl'>
+                    Our Events
+                </h3>
                 <div className='flex flex-col sm:flex-row flex-grow'>
                     {
                         !isMobile && 
@@ -102,9 +105,9 @@ export default function Carousel() {
                                     <h4 className='text-4xl'>
                                         Community Building:
                                     </h4>
-                                    <p className='text-xl'>
-                                        Our mission is giving a community and bringing other white washed persians
-                                        closer to their cultural roots or sth like that
+                                    <p className='text-xl pt-2'>
+                                       Encouraging the UCSD Persian community to connect to their cultural and communal roots by
+                                       hositng cultural themed events.
                                     </p>
                                 </div>
                                 
@@ -124,11 +127,10 @@ export default function Carousel() {
                                 </h5>
                                 <div className='explanation'>
                                     <h4 className='text-4xl'>
-                                        Community Building:
+                                        Social: 
                                     </h4>
-                                    <p className='text-xl'>
-                                        Our mission is giving a community and bringing other white washed persians
-                                        closer to their cultural roots or sth like that
+                                    <p className='text-xl pt-2'>
+                                        Fun and exciting events, exposing the community to great persian music and raghs!
                                     </p>
                                 </div>
                                 
@@ -147,11 +149,10 @@ export default function Carousel() {
                                 </h5>
                                 <div className='explanation'>
                                     <h4 className='text-4xl'>
-                                        Community Building:
+                                        Outdoor and Phycisal:
                                     </h4>
-                                    <p className='text-xl'>
-                                        Our mission is giving a community and bringing other white washed persians
-                                        closer to their cultural roots or sth like that
+                                    <p className='text-xl pt-2'>
+                                        outdoor activites and gatherings, go get your toop and play some footbal! 
                                     </p>
                                 </div>
                                 
