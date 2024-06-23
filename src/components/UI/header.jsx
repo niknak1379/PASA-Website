@@ -4,6 +4,8 @@ import tiktokLogo from '../../assets/Icons/tiktokIcon.svg';
 import sunLogo from '../../assets/Icons/sun.svg'
 import pasaLogo from '../../assets/PASA_logo.webp';
 import newTabLogo from '../../assets/Icons/newTab.svg'
+import newLogoLight from '../../assets/pasaLogoNewLight.svg';
+import newLogoDark from '../../assets/pasaLogoNewDark.svg';
 import './header.css'
 //import headerOffSet from '../../App';
 import { useRef, useEffect, useContext, useState } from 'react';
@@ -237,7 +239,12 @@ export default function Header(props) {
                 <div className='filler basis-0 grow shrink flex items-center'>
                     <ThemeToggleButton/>
                 </div>
-                <h1 className='font-bold text-6xl mr-auto pb-2'>P.A.S.A</h1>
+                <div id='headerLogoWrapper' className='relative h-16'>
+                    <img src={newLogoLight} alt='pasa website header logo' className='h-16 light'/>
+                    <img src={newLogoDark} alt='pasa website header logo' className='h-16 absolute top-0 dark'/>
+                </div>
+                
+                {/* <h1 className='font-bold text-6xl mr-auto pb-2'>P.A.S.A</h1> */}
                 {
                     
                     <ul className="headerSocialIconsList hidden sm:flex flex-row items-center ml-auto basis-0 grow shrink justify-center">

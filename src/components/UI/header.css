@@ -20,9 +20,12 @@ header{
     z-index: 9999;
 }
 
-/* header ul img{
-    filter: invert(1);
-} */
+body #headerLogoWrapper img.dark{
+    opacity: 0;
+}
+body.dark #headerLogoWrapper img.dark{
+    opacity: 1;
+}
 
 header ul.desktopNav li {
     border-right: dashed var(--divider-color);
