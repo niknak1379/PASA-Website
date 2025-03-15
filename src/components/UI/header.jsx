@@ -39,75 +39,9 @@ export default function Header(props) {
                 stickyHeaderRef.current.classList.remove('fixed');
             }
         }
-        //nvm scrapped
-        /* let checked = false;
-        const observer = new IntersectionObserver((entries) => {
-            
-            entries.forEach(entry => {
-                let parentList = document.querySelector(tag.concat(entry.target.id, 'List'));
-                if(entry.isIntersecting){
-                    console.log('intersecting mf')
-                    //console.log(entry.target.id)
-                    checked = true;
-                    parentList.querySelector('span').classList.add('active');
-                    console.log(parentList)
-                }
-                if (entry.intersectionRatio > 0.5){
-                    console.log(entry.intersectionRatio)
-                    parentList.querySelector('span').classList.remove('active');
-                    checked = false;
-                }
-            });
-          }, {
-            //root: null, // observing intersections relative to the viewport
-            threshold: [0, 0.8], // trigger when 50% of the target is visible
-            rootMargin: '-50px' // margin around the root
-        }); */
-        /* let linkIDs = linksArray.map(x => tag.concat(x))
-        let elements = linkIDs.map(id => document.querySelector(id));
-        elements.map(element => observer.observe(element)) */
-        //console.log(elements)
-        /* function activateHeaderLink(){
 
 
-            outer: for (let i = 0; i < linksArray.length; i++) {
-
-                let element = document.querySelector(`${tag.concat(linksArray[i])}`);
-                let parentList = document.querySelector(tag.concat(linksArray[i], 'List'));
-                if(checkVisible(element)) {
-                    console.log(`${tag.concat(linksArray[i])}`);
-                    for(let j = 0; j < checked.length; j++ ) {
-                        console.log(j, checked[j])
-                        if (checked[j]){
-                            if (i - j == 1){
-                                console.log('break prev?')
-                                break
-                            }
-                            break outer;
-                        }
-                    }
-                    //unchecked = false;
-                    //checked = i;
-                    parentList.querySelector('span').classList.add('active');
-                    checked[i] = true;
-                    
-                    continue;
-                }
-                else{
-                    console.log('setting checked to false')
-                    checked[i] = false;
-                    //unchecked = true;
-                    parentList.querySelector('span').classList.remove('active');
-                }
-            } 
-        } */
-
-        /* function checkVisible(elm) {
-            var rect = elm.getBoundingClientRect();
-            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-
-            return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-        } */
+       
 
         function updateMobileStatus() {
             console.log(window.screen.width)
@@ -121,20 +55,8 @@ export default function Header(props) {
             }
         }
 
-        //document.addEventListener('onload', updateMobileStatus)
-        //setTimeout(updateMobileStatus, 0);
-        //updateMobileStatus();
-        //updateMobileStatus();
         window.addEventListener('resize', updateMobileStatus);
         document.addEventListener('scroll', makeNavSticky);
-        
-
-        /* if (linksArray.length != 1) {
-            !isMobile && document.addEventListener('scroll', activateHeaderLink);
-        } */
-
-        
-
         
         
 
