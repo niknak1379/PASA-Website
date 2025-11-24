@@ -14,7 +14,7 @@ import { useEffect, useRef, useState } from "react";
 
 function BoardCard(props) {
 	return (
-		<li className="cardDiv border-solid border-2 h-[400px] w-[300px] shrink-0">
+		<li className="cardDiv border-solid border-2 h-[500px] w-[300px] shrink-0">
 			<span className="block h-2/3">
 				<img
 					src={props.Member.ImgSrc}
